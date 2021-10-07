@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+  font-family: "Poppins", sans-serif;
+}
+
+/* navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 60px;
+  background: #00bbf9;
+  z-index: 1;
+  border: 0.1px solid #00bbf9;
+}
+
+.logo-bg {
+  position: absolute;
+  background: #fff;
+  top: 0;
+  left: -10%;
+  width: 35%;
+  height: 100%;
+  transform: skewX(50deg);
+  z-index: -1;
+  /* transition: 2s; */
+}
+
+.logo-bg::before {
+  content: "";
+  position: absolute;
+  background: #fff;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: skewX(-67deg);
+  /* transition: 2s; */
+}
+
+.navbar-nav{
+  width: 50%;
+}
+
+.nav-link {
+  color: #fff;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.nav-link:hover {
+  color: #000;
+}
+/* end navbar */
+
+/* banner */
+.banner {
+  /* position: absolute; */
+  width: 100%;
+  height: 90vh;
+  margin-top: 70px;
+  /* padding-top: 65px; */
+  /* background-image: url("../images/banner/banner0.webp"); */
+  /* background-size: cover; */
+  /* transition: 3s; */
+  display: none;
+  object-fit: cover;
+  opacity: 1;
+}
+
+.active {
+  display: block;
+  opacity: 1;
+  -webkit-animation-name: show;
+  -webkit-animation-duration: 1.5s;
+  animation-name: show;
+  animation-duration: 1.5s;
+}
+
+/* .show {
+  -webkit-animation-name: show;
+  -webkit-animation-duration: 1.5s;
+  animation-name: show;
+  animation-duration: 1.5s;
+} */
+
+@-webkit-keyframes show {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes show {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* end banner */
+
+/* content */
+.content {
+  width: 100%;
+  padding: 50px 100px;
+}
+
+.content::before {
+  content: "";
+  position: absolute;
+  /* top: 90%; */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/world.webp");
+  background-repeat: no-repeat;
+  object-fit: cover;
+  opacity: 0.15;
+}
+
+.poster {
+  max-width: 100%;
+  max-height: 100%;
+}
+/* end content */
+
+/* footer */
+footer {
+  background: #212529;
+}
+
+.social-media,
+.links,
+.contact {
+  width: 100%;
+  /* background: #fff; */
+}
+
+.sosmed-icon {
+  font-size: 25px;
+  color: #d90429;
+}
+
+.sosmed-link,
+.quick-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.quick-link {
+  line-height: 2.4;
+}
+/* end footer */
+
+/* scroll up */
+.scroll-up {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  right: 5%;
+  bottom: -20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3rem;
+  /* background-color: rgba(132, 140, 153, 0.5); */
+  border-radius: 50%;
+  z-index: 2;
+  transition: 1s;
+  visibility: hidden;
+  text-decoration: none;
+}
+
+.scroll-up:hover {
+  transform: scale(1.2);
+}
+
+.scroll-up .bi {
+  font-size: 2.5rem;
+  color: #00bbf9;
+}
+
+.show {
+  visibility: visible;
+  bottom: 2rem;
+}
+/* end scrollup */
+
+/* mobile */
+@media screen and (max-width: 991px) {
+  .logo-bg {
+    transition: 1s;
+    width: 100%;
+    left: 0;
+    transform: skewX(0deg);
+  }
+
+  .logo-bg::before {
+    transition: 1s;
+    transform: skewX(0deg);
+  }
+
+  .content {
+    padding: 20px 30px;
+  }
+}

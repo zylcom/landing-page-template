@@ -60,28 +60,29 @@
 /* end navbar */
 
 /* banner */
-.banner {
-  /* position: absolute; */
+
+/* .banner {
+  position: absolute;
   width: 100%;
   height: 100vh;
-  /* margin-top: 70px; */
-  /* padding-top: 65px; */
-  /* background-image: url("../images/banner/banner0.webp"); */
-  /* background-size: cover; */
-  /* transition: 3s; */
+  margin-top: 70px;
+  padding-top: 65px;
+  background-image: url("../images/banner/banner0.webp");
+  background-size: cover;
+  transition: 3s;
   display: none;
   object-fit: cover;
   opacity: 1;
-}
+} */
 
-.active {
+/* .active {
   display: block;
   opacity: 1;
   -webkit-animation-name: show;
   -webkit-animation-duration: 1.5s;
   animation-name: show;
   animation-duration: 1.5s;
-}
+} */
 
 /* .show {
   -webkit-animation-name: show;
@@ -90,24 +91,23 @@
   animation-duration: 1.5s;
 } */
 
-@-webkit-keyframes show {
+/* @-webkit-keyframes show {
   from {
     opacity: 0.4;
   }
   to {
     opacity: 1;
   }
-}
+} */
 
-@keyframes show {
+/* @keyframes show {
   from {
     opacity: 0.4;
   }
   to {
     opacity: 1;
   }
-}
-
+} */
 /* end banner */
 
 /* content */
@@ -140,9 +140,9 @@ footer {
   background: #212529;
 }
 
-.social-media,
-.links,
-.contact {
+.social-media-wrapper,
+.links-wrapper,
+.contact-wrapper {
   width: 100%;
   /* background: #fff; */
 }

@@ -179,6 +179,10 @@ footer {
     transform: skewX(0deg);
   }
 
+  .navbar-light .navbar-nav .nav-link.active {
+    color: #00bbf9;
+  }
+
   .content {
     padding: 20px 30px;
   }

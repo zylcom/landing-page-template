@@ -52,6 +52,10 @@
 .nav-link:hover {
   color: #000;
 }
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: #fff;
+}
 /* end navbar */
 
 /* carousel */
